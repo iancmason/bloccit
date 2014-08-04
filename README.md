@@ -1,3 +1,6 @@
+Added file: config/application.yml
+See https://www.bloc.io/resources/environment-variables-with-figaro
+
 ## Bloccit: a Reddit clone to teach the fundamentals of web development and Rails 4.
 
 Made with my mentor at [Bloc](http://bloc.io).
