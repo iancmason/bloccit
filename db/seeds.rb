@@ -8,6 +8,7 @@
 
  require 'faker'
  
+ puts "Michael Was Here"
  # Create Posts
  50.times do
    Post.create(
