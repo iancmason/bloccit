@@ -59,3 +59,5 @@ end
 
  gem 'pundit'
 
+ gem 'redcarpet'
+
