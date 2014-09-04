@@ -34,6 +34,7 @@ class PostsController < ApplicationController
   def update
     @topic = Topic.find(params[:topic_id])
     #@post = Post.find(params[:id])
+    #refactored code example 1
     @post = current_user.posts.build(post_params)
     authorize @post
 
