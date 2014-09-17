@@ -61,3 +61,8 @@ end
 
  gem 'redcarpet'
 
+ gem 'fog'
+
+ gem 'carrierwave'
+ gem 'mini_magick'
+
