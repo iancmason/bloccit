@@ -49,6 +49,7 @@ end
  
  group :development do
    gem 'sqlite3'
+   gem "better_errors"
  end
 
  gem 'bootstrap-sass', '~> 3.1.1'
@@ -63,8 +64,14 @@ end
 
  gem 'fog'
 
+ gem 'pry'
+
  gem 'carrierwave'
  gem 'mini_magick'
 
  gem 'will_paginate', '~> 3.0.5'
+
+ 
+
+
 
