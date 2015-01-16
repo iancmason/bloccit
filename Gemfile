@@ -52,7 +52,7 @@ end
    gem "better_errors"
  end
 
- gem 'bootstrap-sass', '~> 3.1.1'
+ # gem 'bootstrap-sass', '~> 3.1.1'
 
  gem 'devise'
 
@@ -71,9 +71,13 @@ end
 
  gem 'will_paginate', '~> 3.0.5'
 
+ gem "spring-commands-rspec", group: :development
+
  group :test do
   gem 'rspec-rails', '~> 3.1.0'
  end
+
+ gem 'bootstrap-sass', '3.2.0'
 
  
 
