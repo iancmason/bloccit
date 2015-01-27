@@ -29,12 +29,13 @@
 </div>
 
 <h2><%= @comments.count %> Comments</h2>
-
+    <div class='js-comments'>
     <%= render partial: 'comments/comment', collection: @comments %>
-
+  </div>
     
       <hr/>
       <h4>New Comment</h4>
+      <div class='new-comment'>
       <%= render partial: 'comments/form', locals: { topic: @topic, post: @post, comment: @comment } %>
-
+      </div>
 </div>
