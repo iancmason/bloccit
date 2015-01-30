@@ -1,4 +1,4 @@
-<!-- <div class="media"> -->
+
 <%= content_tag :div, class: 'media', id: "comment-#{comment.id}" do %>
   <%= link_to '#', class: 'pull-left' do %>
     <%= image_tag(comment.user.avatar.small.url) if comment.user.avatar? %> 
@@ -7,12 +7,11 @@
     <small>
       <%= comment.user.name %> commented <%= time_ago_in_words(comment.created_at) %> ago
       <% if policy(comment).destroy? %>
-        | <%= link_to "Delete", [comment.post, comment], method: :delete, remote: true %>
+        |<%= link_to "Delete", [comment.post, comment], method: :delete, remote: true %>
       <% end %>
     </small>
     <p><%= comment.body %></p>
   </div>
-<!-- </div> -->
 <% end %>
   
  

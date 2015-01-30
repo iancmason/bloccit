@@ -2,9 +2,13 @@
   respond_to :html, :js
 
   def create
-    #@topic = Topic.find(params[:topic_id])
-    @post = @topic.posts.find(params[:post_id])
+    # @topic = Topic.find(nil)
+    # @post = @topic.posts.find(params[:post_id])
+    # params[:post_id]
+    @post = Post.find(params[:post_id])
+    @topic = @post.topic
     @comments = @post.comments
+
 
     @comment = current_user.comments.build( comment_params )
     @comment.post = @post
@@ -30,8 +34,11 @@
   end
 
   def destroy
-    @topic = Topic.find(params[:topic_id])
-    @post = @topic.posts.find(params[:post_id])
+    # @topic = Topic.find(params[:topic_id])
+    # @post = @topic.posts.find(params[:post_id])
+    # @comment = @post.comments.find(params[:id])
+    @post = Post.find(params[:post_id])
+    @topic = @post.topic
     @comment = @post.comments.find(params[:id])
 
     authorize @comment
